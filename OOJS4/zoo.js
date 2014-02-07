@@ -8,12 +8,11 @@ function Animal(name, legs) {
   this.legs = legs;
 }
 
-
-Zoo.prototype.bipeds = function(action) {
-  if action != 2 {
-    remove action
-  }
+Zoo = {
+  init: function(animals) { .. .},
+  bipeds: function() { this.animals... }
 }
+
 
 
 //------------------------------------------------------------------------------------------------------------------
