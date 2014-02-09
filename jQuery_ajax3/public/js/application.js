@@ -4,7 +4,7 @@ $(document).ready(function(){
       $.post('/color', function(data) {
         console.log(data);
         var select = "li:nth-child(" + data.cell + ")"
-        $(select).html("style=" + gitdata.color)
+        $(select).css( data.color)
       })
   })
 });
