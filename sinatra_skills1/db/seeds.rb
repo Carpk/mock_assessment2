@@ -20,3 +20,15 @@ end
 
 # TODO: create associations between users and skills
 
+8.times do
+  Proficiency.create(user_id: rand(1..6),
+    skill_id: rand(1..2),
+    experiance: rand(1..12),
+    educated: rand(1..2) == 2)
+end
+
+
+      # t.integer :user_id
+      # t.integer :skill_id
+      # t.integer :experiance
+      # t.boolean :educated, :default => false
