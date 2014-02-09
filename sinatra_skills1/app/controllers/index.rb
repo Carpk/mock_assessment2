@@ -47,6 +47,7 @@ end
 post '/users' do
   # sign-up
   @user = User.new params[:user]
+
   if @user.save
     # successfully created new account; set up the session and redirect
     session[:user_id] = @user.id
